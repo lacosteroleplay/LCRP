@@ -34,7 +34,7 @@ function LoadFarms() {
 			format(FarmData[id][farmName], 64, name);
 			cache_get_value_name(i, "owner", owner);
 			format(FarmData[id][farmOwner], 128, owner);
-			FarmData[id][farmZone]
+			FarmData[id][farmZone] = CreateDynamicPolygon(FarmData[id][farmZonesPoint]);
 			cache_get_value_name_int(i, "price", FarmData[id][farmPrice]);
 			cache_get_value_name_float(i, "posx", FarmData[id][farmX]);
 			cache_get_value_name_float(i, "posy", FarmData[id][farmY]);
