@@ -54,6 +54,8 @@ function LoadFarms() {
 Farms_Save(id){
 	new query[2048];
 	mysql_format(g_SQL, query, sizeof(query), "UPDATE farms SET name='%s', owner='%s', posx='%f', posy='%f', posz='%f'", );
+
+	return mysql_tquery(g_SQL, query);
 }
 
 
