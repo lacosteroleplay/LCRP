@@ -421,21 +421,23 @@ CreateTextDraw()
 	TextDrawSetShadow(TDEditor_TD[11], 0);
 	
 	//HBE textdraw Simple
-	TDEditor_TD[12] = TextDrawCreate(450.500000, 428.000091, "LD_SPAC:white");
-	TextDrawLetterSize(TDEditor_TD[12], 0.000000, 0.000000);
-	TextDrawTextSize(TDEditor_TD[12], 191.000000, 27.000000);
-	TextDrawAlignment(TDEditor_TD[12], 1);
-	TextDrawColor(TDEditor_TD[12], 175);
+	TDEditor_TD[12] = TextDrawCreate(57.000000, 201.000000, "_");
+	TextDrawFont(TDEditor_TD[12], 1);
+	TextDrawLetterSize(TDEditor_TD[12], 0.679166, 4.049979);
+	TextDrawTextSize(TDEditor_TD[12], 305.500000, 58.000000);
+	TextDrawSetOutline(TDEditor_TD[12], 1);
 	TextDrawSetShadow(TDEditor_TD[12], 0);
-	TextDrawSetOutline(TDEditor_TD[12], 0);
+	TextDrawAlignment(TDEditor_TD[12], 2);
+	TextDrawColor(TDEditor_TD[12], 255);
 	TextDrawBackgroundColor(TDEditor_TD[12], 255);
-	TextDrawFont(TDEditor_TD[12], 4);
-	TextDrawSetProportional(TDEditor_TD[12], 0);
-	TextDrawSetShadow(TDEditor_TD[12], 0);
+	TextDrawBoxColor(TDEditor_TD[12], 135);
+	TextDrawUseBox(TDEditor_TD[12], 1);
+	TextDrawSetProportional(TDEditor_TD[12], 1);
+	TextDrawSetSelectable(TDEditor_TD[12], 0);
 
-	TDEditor_TD[13] = TextDrawCreate(450.000000, 422.166778, "");
-	TextDrawLetterSize(TDEditor_TD[13], 0.000000, 0.000000);
-	TextDrawTextSize(TDEditor_TD[13], 17.000000, 34.000000);
+	TDEditor_TD[13] = TextDrawCreate(4.000000, 194.000000, "HUD:radar_burgershot");
+	TextDrawLetterSize(TDEditor_TD[13], 0.600000, 2.000000);
+	TextDrawTextSize(TDEditor_TD[13], 17.000000, 16.000000);
 	TextDrawAlignment(TDEditor_TD[13], 1);
 	TextDrawColor(TDEditor_TD[13], -1);
 	TextDrawSetShadow(TDEditor_TD[13], 0);
@@ -445,11 +447,11 @@ CreateTextDraw()
 	TextDrawSetProportional(TDEditor_TD[13], 0);
 	TextDrawSetShadow(TDEditor_TD[13], 0);
 	TextDrawSetPreviewModel(TDEditor_TD[13], 2703);
-	TextDrawSetPreviewRot(TDEditor_TD[13], 100.000000, 0.000000, -10.000000, 1.000000);
+	TextDrawSetPreviewRot(TDEditor_TD[13], 100.000000, 1.000000, -10.000000, 1.000000);
 
-	TDEditor_TD[14] = TextDrawCreate(507.500000, 429.166748, "");
-	TextDrawLetterSize(TDEditor_TD[14], 0.000000, 0.000000);
-	TextDrawTextSize(TDEditor_TD[14], 25.000000, 20.000000);
+	TDEditor_TD[14] = TextDrawCreate(5.000000, 210.000000, "HUD:radar_datedrink");
+	TextDrawLetterSize(TDEditor_TD[14], 0.600000, 2.000000);
+	TextDrawTextSize(TDEditor_TD[14], 16.000000, 16.000000);
 	TextDrawAlignment(TDEditor_TD[14], 1);
 	TextDrawColor(TDEditor_TD[14], -1);
 	TextDrawSetShadow(TDEditor_TD[14], 0);
@@ -459,11 +461,11 @@ CreateTextDraw()
 	TextDrawSetProportional(TDEditor_TD[14], 0);
 	TextDrawSetShadow(TDEditor_TD[14], 0);
 	TextDrawSetPreviewModel(TDEditor_TD[14], 1546);
-	TextDrawSetPreviewRot(TDEditor_TD[14], 0.000000, 0.000000, 100.000000, 1.000000);
+	TextDrawSetPreviewRot(TDEditor_TD[14], -1.000000, 0.000000, 100.000000, 1.000000);
 
-	TDEditor_TD[15] = TextDrawCreate(574.500000, 427.999969, "");
-	TextDrawLetterSize(TDEditor_TD[15], 0.000000, 0.000000);
-	TextDrawTextSize(TDEditor_TD[15], 20.000000, 19.000000);
+	TDEditor_TD[15] = TextDrawCreate(3.000000, 225.000000, "HUD:radar_gangn");
+	TextDrawLetterSize(TDEditor_TD[15], 0.600000, 2.000000);
+	TextDrawTextSize(TDEditor_TD[15], 17.000000, 17.000000);
 	TextDrawAlignment(TDEditor_TD[15], 1);
 	TextDrawColor(TDEditor_TD[15], -1);
 	TextDrawSetShadow(TDEditor_TD[15], 0);

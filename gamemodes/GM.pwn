@@ -52,7 +52,7 @@
 //#include <SIF/door.inc>
 
 //-----[ Modular ]-----
-#include "DEFINE.pwn"
+#include "Modules\DEFINE.pwn"
 
 
 //----------[ New Variable ]-----
@@ -725,65 +725,65 @@ main() {
 	SetTimer("onlineTimer", 1000, true);
 	SetTimer("TDUpdates", 8000, true);
 }
-#include "COLOR.pwn"
-#include "TEXTDRAW.pwn"
-#include "ANIMS.pwn"
-#include "PRIVATE_VEHICLE.pwn"
-#include "REPORT.pwn"
-#include "AFK.pwn"
-#include "WEAPON_ATTH.pwn"
-#include "TOYS.pwn"
-#include "HELMET.pwn"
-#include "SERVER.pwn"
-#include "DOOR.pwn"
-#include "FAMILY.pwn"
-#include "HOUSE.pwn"
-#include "BISNIS.pwn"
-#include "CONTACT.pwn"
-#include "GAS_STATION.pwn"
-#include "DYNAMIC_LOCKER.pwn"
-#include "NATIVE.pwn"
-#include "JOB\JOB_SWEEPER.pwn"
-#include "JOB\JOB_BUS.pwn"
-#include "JOB\JOB_MOWER.pwn"
-#include "JOB\JOB_MILKER.pwn"
-#include "VOUCHER.pwn"
-#include "SALARY.pwn"
-#include "ATM.pwn"
-#include "ARMS_DEALER.pwn"
-#include "GATE.pwn"
-#include "OBJECT.pwn"
-#include "TOLL.pwn"
+#include "Modules\COLOR.pwn"
+#include "Modules\TEXTDRAW.pwn"
+#include "Modules\ANIMS.pwn"
+#include "Modules\PRIVATE_VEHICLE.pwn"
+#include "Modules\REPORT.pwn"
+#include "Modules\AFK.pwn"
+#include "Modules\WEAPON_ATTH.pwn"
+#include "Modules\TOYS.pwn"
+#include "Modules\HELMET.pwn"
+#include "Modules\SERVER.pwn"
+#include "Modules\DOOR.pwn"
+#include "Modules\FAMILY.pwn"
+#include "Modules\HOUSE.pwn"
+#include "Modules\BISNIS.pwn"
+#include "Modules\CONTACT.pwn"
+#include "Modules\GAS_STATION.pwn"
+#include "Modules\DYNAMIC_LOCKER.pwn"
+#include "Modules\NATIVE.pwn"
+#include "Modules\JOB\JOB_SWEEPER.pwn"
+#include "Modules\JOB\JOB_BUS.pwn"
+#include "Modules\JOB\JOB_MOWER.pwn"
+#include "Modules\JOB\JOB_MILKER.pwn"
+#include "Modules\VOUCHER.pwn"
+#include "Modules\SALARY.pwn"
+#include "Modules\ATM.pwn"
+#include "Modules\ARMS_DEALER.pwn"
+#include "Modules\GATE.pwn"
+#include "Modules\OBJECT.pwn"
+#include "Modules\TOLL.pwn"
 //#include "AUDIO.pwn"
-#include "JOB\JOB_TAXI.pwn"
-#include "JOB\JOB_MECH.pwn"
-#include "JOB\JOB_LUMBER.pwn"
-#include "JOB\JOB_MINER.pwn"
-#include "JOB\JOB_PRODUCTION.pwn"
-#include "JOB\JOB_TRUCKER.pwn"
-#include "JOB\JOB_FISH.pwn"
-#include "JOB\JOB_FARMER.pwn"
-#include "JOB\JOB_NELAYAN.pwn"
-#include "JOB\JOB_TRASHMASTER.pwn"
-#include "JOB\JOB_BUILDER.pwn"
+#include "Modules\JOB\JOB_TAXI.pwn"
+#include "Modules\JOB\JOB_MECH.pwn"
+#include "Modules\JOB\JOB_LUMBER.pwn"
+#include "Modules\JOB\JOB_MINER.pwn"
+#include "Modules\JOB\JOB_PRODUCTION.pwn"
+#include "Modules\JOB\JOB_TRUCKER.pwn"
+#include "Modules\JOB\JOB_FISH.pwn"
+#include "Modules\JOB\JOB_FARMER.pwn"
+#include "Modules\JOB\JOB_NELAYAN.pwn"
+#include "Modules\JOB\JOB_TRASHMASTER.pwn"
+#include "Modules\JOB\JOB_BUILDER.pwn"
 
-#include "CMD\ADMIN.pwn"
-#include "CMD\FACTION.pwn"
-#include "CMD\PLAYER.pwn"
-#include "BOOMBOX.pwn"
-#include "QUIZ.pwn"
-#include "SAPD_TASER.pwn"
-#include "SAPD_SPIKE.pwn"
+#include "Modules\CMD\ADMIN.pwn"
+#include "Modules\CMD\FACTION.pwn"
+#include "Modules\CMD\PLAYER.pwn"
+#include "Modules\BOOMBOX.pwn"
+#include "Modules\QUIZ.pwn"
+#include "Modules\SAPD_TASER.pwn"
+#include "Modules\SAPD_SPIKE.pwn"
 
-#include "DIALOG.pwn"
+#include "Modules\DIALOG.pwn"
 
-#include "CMD\ALIAS\ALIAS_ADMIN.pwn"
-#include "CMD\ALIAS\ALIAS_PLAYER.pwn"
-#include "CMD\ALIAS\ALIAS_BISNIS.pwn"
-#include "CMD\ALIAS\ALIAS_HOUSE.pwn"
-#include "CMD\ALIAS\ALIAS_PRIVATE_VEHICLE.pwn"
+#include "Modules\CMD\ALIAS\ALIAS_ADMIN.pwn"
+#include "Modules\CMD\ALIAS\ALIAS_PLAYER.pwn"
+#include "Modules\CMD\ALIAS\ALIAS_BISNIS.pwn"
+#include "Modules\CMD\ALIAS\ALIAS_HOUSE.pwn"
+#include "Modules\CMD\ALIAS\ALIAS_PRIVATE_VEHICLE.pwn"
 
-#include "FUNCTION.pwn"
+#include "Modules\FUNCTION.pwn"
 
 public OnGameModeInit()
 {
@@ -1845,9 +1845,9 @@ public OnPlayerConnect(playerid)
 	pData[playerid][spdamagebar] = CreatePlayerProgressBar(playerid, 565.500000, 383.666717, 51.000000, 7.000000, 16711935, 1000.0, 0);
 	pData[playerid][spfuelbar] = CreatePlayerProgressBar(playerid, 566.000000, 398.250061, 51.000000, 7.000000, 16711935, 1000.0, 0);
                 
-	pData[playerid][sphungrybar] = CreatePlayerProgressBar(playerid, 28.000000, 201.000000, 62.000000, 6.000000, 852308735, 100.0, 0);
-	pData[playerid][spenergybar] = CreatePlayerProgressBar(playerid, 28.000000, 217.000000, 62.000000, 6.000000, 852308735, 100.0, 0);
-	pData[playerid][spbladdybar] = CreatePlayerProgressBar(playerid, 28.000000, 232.000000, 62.000000, 6.000000, 852308735, 100.0, 0);
+	pData[playerid][sphungrybar] = CreatePlayerProgressBar(playerid, 28.000000, 201.000000, 62.000000, 6.000000, 852308735, 100.000000, 0);
+	pData[playerid][spenergybar] = CreatePlayerProgressBar(playerid, 28.000000, 217.000000, 62.000000, 6.000000, 852308735, 100.000000, 0);
+	pData[playerid][spbladdybar] = CreatePlayerProgressBar(playerid, 28.000000, 232.000000, 62.000000, 6.000000, 852308735, 100.000000, 0);
 
 	//PlayAudioStreamForPlayer(playerid, "http://www.soi-rp.com/music/songs/LP-A_Light.mp3");
 	return 1;
